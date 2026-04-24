@@ -1,0 +1,118 @@
+============================================================
+  사용 전 읽어주세요 — Claude 연구용 스킬 패키지
+============================================================
+
+【 설치 방법 】
+
+▶ 방법 1 — Claude Code 터미널 이용 (권장)
+  1. Claude Code(터미널)를 엽니다
+  2. 이 zip 파일을 터미널 창에 드래그 앤 드랍합니다
+  3. "이 스킬들 전부 설치해줘" 라고 입력합니다
+     → Claude가 각 폴더를 ~/.claude/skills/ 에 자동 복사합니다
+
+▶ 방법 2 — 수동 설치
+  원하는 스킬 폴더를 ~/.claude/skills/ 에 직접 복사합니다
+  예) cp -r research-develop ~/.claude/skills/
+
+▶ 설치 확인
+  Claude Code에서 /research-develop 등으로 호출해보세요
+
+────────────────────────────────────────────────────────────
+
+【 연구 시작 】
+  /research-develop                             연구자가 막연한 관심사나 초기 아이디어를 박사논문·학술논문·연구 제안서 수준의 명확한 연구 설계로 발전시키도록 돕는 스킬. 연구자가 "이런 주제로 이런 연구를 해볼까 싶은데 어떻게
+  /research                                     Start a research project with intelligent agent orchestration
+  /research-manager                             Use this when starting a new research project or managing a complex, multi-step research workflow.
+  /deep-research                                Universal deep research agent team. 13-agent pipeline for rigorous academic research on any topic. 7
+  /research-ideation                            This skill should be used when the user asks to "brainstorm research ideas", "use 5W1H framework", "
+  /idea-to-proposal                             Multi-dimensional research idea evaluation with iterative refinement and publication-quality proposa
+  /brainstorming                                You MUST use this before any creative work - creating features, building components, adding function
+
+【 문헌 조사 】
+  /literature-review                            You must use this when synthesizing existing knowledge, identifying research gaps, or tracing the ev
+  /literature-survey                            Comprehensive topic-driven literature survey for AI/ML research. Searches arXiv, Semantic Scholar, a
+  /paper-triggered-survey                       Paper-triggered literature survey and idea generation. Given a PDF, arXiv URL, or tweet containing a
+  /gs-search                                    Search Google Scholar for academic papers by keywords. Returns results with title, authors, journal,
+  /gs-advanced-search                           Perform advanced Google Scholar search with filters - author, journal, date range, exact phrase, tit
+  /gs-cited-by                                  Find papers that cite a given Google Scholar paper. Tracks citation chains using data-cid (cluster I
+  /gs-fulltext                                  Get full-text access links for a Google Scholar paper - PDF, DOI, Sci-Hub, and publisher links. Use 
+  /gs-export                                    Export Google Scholar paper(s) to Zotero via BibTeX. Gets citation data from Google Scholar's cite d
+  /gs-navigate-pages                            Navigate Google Scholar search result pages. Use when user wants to see more results or go to a spec
+  /content-access                               Legal methods for accessing paywalled and geo-blocked content. Use when researching behind paywalls,
+  /daily-paper-generator                        Use when the user asks to "generate daily paper", "search arXiv for EEG papers", "find EEG decoding 
+
+【 논문 작성 】
+  /academic-paper                               Academic paper writing skill with 12-agent pipeline. v2.5: Style Calibration (learn author's writing
+  /academic-writing                             You must use this when producing any research prose — literature reviews, syntheses, analyses, metho
+  /ml-paper-writing                             Write publication-ready ML/AI papers for NeurIPS, ICML, ICLR, ACL, AAAI, COLM. Use when drafting pap
+  /paper-strategist                             Systematic strategic planning framework for philosophy and interdisciplinary academic papers targeti
+  /paper-composer                               Systematic writing framework for philosophy and interdisciplinary academic papers from optimized out
+  /survey-writing                               Taxonomy-focused literature review and survey paper writing. Given a research field or topic, search
+  /doc-coauthoring                              This skill should be used when the user asks to co-author documentation, draft a proposal, write a t
+  /academic-pipeline                            Orchestrator for the full academic research pipeline: research -> write -> integrity check -> review
+
+【 검토·수정 】
+  /paper-reviewing                              Conference-style academic paper peer review. Reads a paper PDF, assesses novelty, technical soundnes
+  /review-paper                                 Run a 6-agent pre-submission referee report for an academic paper targeting a specified journal
+  /review-paper-light                           Run a fast 2-agent pre-submission check for an economics paper — focuses on contribution, identifica
+  /review-paper-code                            Review research code for reproducibility and quality, extract the paper's main empirical claims, com
+  /paper-polishing                              Comprehensive academic paper draft feedback in ICML meta-review style. Analyzes correctness (equatio
+  /paper-self-review                            This skill should be used when the user asks to "review paper quality", "check paper completeness", 
+  /academic-paper-reviewer                      Multi-perspective academic paper review with dynamic reviewer personas. Simulates 5 independent revi
+  /review                                       PhD-level academic manuscript and research proposal review.
+  /peer-review                                  You must use this when critiquing academic manuscripts, evaluating methodological rigor, or providin
+  /writing-anti-ai                              This skill should be used when the user asks to "remove AI writing patterns", "humanize this text", 
+  /rebuttal                                     Rebuttal pipeline for conference paper reviews. Parses reviewer feedback, classifies concerns by sev
+  /review-response                              Systematic review response workflow from comment analysis to professional rebuttal writing. Use when
+
+【 방법론 】
+  /research-methodology                         You must use this when matching research questions to appropriate designs, sampling strategies, or v
+  /methodology                                  Research methodology selection, design, and validation guidance.
+  /qualitative-research                         You must use this when designing qualitative studies, developing coding schemes, or performing thema
+  /quantitative-analysis                        You must use this when selecting statistical tests, interpreting effect sizes, or conducting power a
+  /hypothesis-testing                           You must use this when formulating testable hypotheses, designing experimental controls, or defining
+  /systematic-review                            You must use this when conducting PRISMA-standard systematic reviews, protocol development, or Risk 
+  /prisma-compliant-systematic-literature-review PRISMA 기준 체계적 문헌 검색 프로토콜 및 Boolean 검색식 개발
+  /ethics                                       Research ethics, IRB compliance, and data privacy analysis.
+  /ethics-review                                You must use this when identifying ethical risks, ensuring participant privacy, or preparing IRB app
+
+【 연구비·제안서 】
+  /grant                                        Transform research ideas into compelling, fundable grant proposals (NSF, NIH, ERC).
+  /grant-writing                                You must use this when drafting grant proposals, refining research aims, or aligning projects with a
+  /review-grant                                 Run a 6-agent pre-submission panel review for a grant proposal targeting a specified funder or progr
+  /review-pap                                   Run a 6-agent pre-submission review of a pre-analysis plan (PAP) for a specified registration target
+
+【 분석·종합 】
+  /results-analysis                             This skill should be used when the user asks to "analyze experimental results", "run strict statisti
+  /results-report                               This skill should be used when the user asks to "write an experiment report", "summarize experimenta
+  /research-synthesis                           You must use this when merging findings from multiple studies into a coherent narrative with grounde
+  /synthesize                                   Synthesize findings from multiple sources into coherent conclusions with uncertainty quantification.
+  /analyze                                      Critically analyze content, claims, or arguments with rigorous evaluation.
+  /critical-analysis                            You must use this when analyzing claims, evaluating evidence, or Identifying logical fallacies in re
+  /csv-data-summarizer                          Analyzes CSV files, generates summary stats, and plots quick visualizations using Python and pandas.
+
+【 인용·참고문헌 】
+  /citation-assistant                           Automatic citation insertion for LaTeX manuscripts. Parses LaTeX source to find uncited statements (
+  /citation-verification                        This skill provides reference guidance for citation verification in academic writing. Use when the u
+  /bibliography                                 Generate formatted bibliography and citations in various academic styles.
+  /zotero-obsidian-bridge                       Use this skill when papers are collected in Zotero but the user wants detailed reading notes, projec
+  /obsidian-literature-workflow                 Use this skill when the user keeps paper notes inside an Obsidian project knowledge base and wants f
+
+【 발표 자료 】
+  /academic-pptx                                Use this skill whenever the user wants to create or improve a presentation for an academic context —
+  /poster-slides-maker                          Academic poster and presentation slides creator. Given a paper PDF or LaTeX project, generates confe
+
+【 전문가 에이전트 】
+  /domain-synthesis-architect                   연구 분야 내 학파·개념적 진화를 테마별로 지도화하는 종합 아키텍트
+  /evidence-rigor-architect                     증거 종합의 비뚤림 위험(RoB) 평가 프로토콜 설계 전문가
+  /meta-analysis-protocol-architect             PRISMA 기반 메타분석 통계 분석 계획(SAP) 수립
+  /senior-qualitative-methodologist             PRISMA-Eth 기반 질적 합성(테마 종합·메타-에스노그래피) 프로토콜 설계
+  /contribution-architect                       문헌 한계 분석 → 연구 공백 매트릭스 → 고임팩트 기여 정당성 브리프 도출
+  /prisma-publication-architect                 체계적 문헌고찰·메타분석 결과를 출판 원고 프레임워크로 변환
+  /literature-infrastructure-lab                Zotero/Obsidian 연동 인용 관리·논문 추적 워크플로우 설계
+
+────────────────────────────────────────────────────────────
+총 72개 스킬 포함
+
+문의 및 가이드: https://github.com/goldring-creator/reserch-skills
+Claude 연구 활용 가이드: https://github.com/goldring-creator/claude_guide_for_edu-reserch
