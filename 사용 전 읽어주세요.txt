@@ -39,6 +39,7 @@
   /gs-export                                    Export Google Scholar paper(s) to Zotero via BibTeX. Gets citation data from Google Scholar's cite d
   /gs-navigate-pages                            Navigate Google Scholar search result pages. Use when user wants to see more results or go to a spec
   /content-access                               Legal methods for accessing paywalled and geo-blocked content. Use when researching behind paywalls,
+  /riss-literature                              한국외대 도서관 계정으로 RISS 논문 검색·PDF 다운로드·주제별 자동 분류
   /daily-paper-generator                        Use when the user asks to "generate daily paper", "search arXiv for EEG papers", "find EEG decoding 
 
 【 논문 작성 】
@@ -112,7 +113,7 @@
   /literature-infrastructure-lab                Zotero/Obsidian 연동 인용 관리·논문 추적 워크플로우 설계
 
 ────────────────────────────────────────────────────────────
-총 72개 스킬 포함
+총 73개 스킬 포함
 
 문의 및 가이드: https://github.com/goldring-creator/reserch-skills
 Claude 연구 활용 가이드: https://github.com/goldring-creator/claude_guide_for_edu-reserch
